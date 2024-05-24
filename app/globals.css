@@ -35,7 +35,7 @@ header img {
   object-fit: cover;
   align-items: center;
    justify-content: center; 
-      align-items: center; 
+     
 }
 
 header h1 {
@@ -47,8 +47,8 @@ header h1 {
   -webkit-text-fill-color: transparent;
   filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.5));
 }
-
-header p {
+    
+header p {      
   margin: 0;
   font-size: 1.25rem;
   color: #8964b0;
@@ -143,7 +143,7 @@ main h2 {
 }
 
 #tab-content {
-  padding: 1rem;
+  padding: 2rem;
   border-radius: 6px;
   background-color: #7b2dac;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
