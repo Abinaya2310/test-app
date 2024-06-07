@@ -1,79 +1,98 @@
 
 
-export const CORE_CONCEPTS = [
-  {
-   
-    title: 'Components',
-    description:
-      'The core UI building block - compose the user interface by combining multiple components.',
-  },
-  {
-   
-    title: 'JSX',
-    description:
-      'Return (potentially dynamic) HTML(ish) code to define the actual markup that will be rendered.',
-  },
-  {
-   
-    title: 'Props',
-    description:
-      'Make components configurable (and therefore reusable) by passing input data to them.',
-  },
-  {
-    
-    title: 'State',
-    description:
-      'React-managed data which, when changed, causes the component to re-render & the UI to update.',
-  },
-];
+/**
+ * @typedef {Object} Example
+ * @property {string} title 
+ *  * @property {string} description 
+ * @property {string} code
+ */
 
-export const EXAMPLES = {
+/**
+ * @typedef {Object} ExamplesType
+ * @property {Example} components
+ * @property {Example} jsx 
+ * @property {Example} props 
+ * @property {Example} state 
+ */
+
+/**
+
+ * @type {ExamplesType}
+ */
+const EXAMPLES = {
   components: {
-    title: 'Components',
-    description:
-      'Components are the building blocks of React applications. A component is a self-contained module (HTML + optional CSS + JS) that renders some output.',
+    title: "Components Example",
+    description: "An example demonstrating how to create a React component.",
     code: `
-function Welcome() {
-  return <h1>Hello, World!</h1>;
-}`,
+import React from 'react';
+
+const MyComponent = () => {
+  return (
+    <div>
+      <h1>Hello, World!</h1>
+    </div>
+  );
+};
+
+export default MyComponent;
+    `
   },
   jsx: {
-    title: 'JSX',
-    description:
-      'JSX is a syntax extension to JavaScript. It is similar to a template language, but it has full power of JavaScript (e.g., it may output dynamic content).',
+    title: "JSX Example",
+    description: "An example demonstrating JSX syntax.",
     code: `
-<div>
-  <h1>Welcome {userName}</h1>
-  <p>Time to learn React!</p>
-</div>`,
+import React from 'react';
+
+const JSXExample = () => {
+  return (
+    <div>
+      <h1>This is JSX</h1>
+    </div>
+  );
+};
+
+export default JSXExample;
+    `
   },
   props: {
-    title: 'Props',
-    description:
-      'Components accept arbitrary inputs called props. They are like function arguments.',
+    title: "Props Example",
+    description: "An example demonstrating how to use props in a React component.",
     code: `
-function Welcome(props) {
-  return <h1>Hello, {props.name}</h1>;
-}`,
+import React from 'react';
+
+const Greeting = ({ name }) => {
+  return <h1>Hello, {name}!</h1>;
+};
+
+const App = () => {
+  return <Greeting name="John" />;
+};
+
+export default App;
+    `
   },
   state: {
-    title: 'State',
-    description:
-      'State allows React components to change their output over time in response to user actions, network responses, and anything else.',
+    title: "State Example",
+    description: "An example demonstrating how to use state in a React component.",
     code: `
-function Counter() {
-  const [isVisible, setIsVisible] = useState(false);
+import React, { useState } from 'react';
 
-  function handleClick() {
-    setIsVisible(true);
-  }
+const Counter = () => {
+  const [count, setCount] = useState(0);
 
   return (
     <div>
-      <button onClick={handleClick}>Show Details</button>
-      {isVisible && <p>Amazing details!</p>}
+      <p>Count: {count}</p>
+      <button onClick={() => setCount(count + 1)}>Increment</button>
     </div>
   );
-}`,
-  },
 };
+
+export default Counter;
+    `
+  }
+};
+
+
+export { EXAMPLES };
+

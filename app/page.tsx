@@ -5,14 +5,10 @@ import { useState } from 'react';
 import { Example, EXAMPLES, ExamplesType } from "./data-with-example";
 import TabButton from "./TabButton";
 
-const reactDescriptions = ['Fundamental', 'Crucial', 'Core'];
 
-function genRandomInt(max: number): number {
-return Math.floor(Math.random() * (max + 1));
-}
 
 function Header() {
-const description = reactDescriptions[genRandomInt(2)];
+const description = ['Fundamental'];
 
 return (
 <header>
@@ -43,7 +39,7 @@ function handleSelect(selectedButton: keyof ExamplesType) {
 if (EXAMPLES[selectedButton]) {
 setSelectedTopic(selectedButton);
 } else {
-console.error(`Invalid topic selected: ${selectedButton}`);
+console.error(`Invalid topic selected: {selectedButton}`);
 }
 }
 
@@ -71,26 +67,26 @@ return (
  isSelected={selectedTopic === 'components'}
  onSelect={() => handleSelect('components')}
  >
- Components
+     Components
  </TabButton>
- <TabButton
+<TabButton
  isSelected={selectedTopic === 'jsx'}
  onSelect={() => handleSelect('jsx')}
- >
- JSX
+>
+JSX
  </TabButton>
  <TabButton
  isSelected={selectedTopic === 'props'}
  onSelect={() => handleSelect('props')}
  >
-Props
+ Props
  </TabButton>
  <TabButton
  isSelected={selectedTopic === 'state'}
-onSelect={() => handleSelect('state')}
+ onSelect={() => handleSelect('state')}
  >
  State
-</TabButton>
+  </TabButton>
 </menu>
 
 <div id="tab-content">
@@ -113,3 +109,4 @@ onSelect={() => handleSelect('state')}
 }
 
 export default App;
+
