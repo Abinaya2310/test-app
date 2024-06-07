@@ -8,12 +8,12 @@ import TabButton from "./TabButton";
 
 
 function Header() {
-const description = ['Fundamental'];
+const description = ['Gaming '];
 
 return (
 <header>
 <h1> PLAYTONIA GAMING</h1>
-<p>{description} React concepts you will need for almost any app you are going to build!</p>
+<p>{description} is the ultimate stress reliever. "WELCOME TO PLAYTONIA GAMING"</p>
 </header>
 );
 }
@@ -54,10 +54,10 @@ return (
 <section id="core-concepts">
 <h2>Core Concepts</h2>
 <ul>
-<CoreConcept title="Components" description="The core UI building block - compose the user interface by combining multiple components." />
-<CoreConcept title="Props" description="Make components configurable (and therefore reusable) by passing input data to them." />
-<CoreConcept title="JSX" description="Return (potentially dynamic) HTML(ish) code to define the actual markup that will be rendered." />
-<CoreConcept title="State" description="React-managed data which, when changed, causes the component to re-render & the UI to update." />
+<CoreConcept title="VFX" description="The core UI building block - compose the user interface by combining multiple components." />
+<CoreConcept title="VR" description="Make components configurable (and therefore reusable) by passing input data to them." />
+<CoreConcept title="ESports" description="Return (potentially dynamic) HTML(ish) code to define the actual markup that will be rendered." />
+<CoreConcept title="Bowling" description="React-managed data which, when changed, causes the component to re-render & the UI to update." />
 </ul>
 </section>
 <section id="examples">
