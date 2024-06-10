@@ -9,10 +9,10 @@
 
 /**
  * @typedef {Object} ExamplesType
- * @property {Example} components
- * @property {Example} jsx 
- * @property {Example} props 
- * @property {Example} state 
+ * @property {Example} VFX
+ * @property {Example} VR
+ * @property {Example}ESports
+ * @property {Example} Bowling
  */
 
 /**
@@ -20,75 +20,48 @@
  * @type {ExamplesType}
  */
 const EXAMPLES = {
-  components: {
-    title: "Components Example",
-    description: "An example demonstrating how to create a React component.",
+  VFX: {
+    title: "VFX Example",
+    description: ".",
     code: `
-import React from 'react';
+VFX involves the integration of live-action footage  and generated imagery to create
+environments,objects,creatures ,and effects that would be costly, dangerous, or 
+outright impossible to capture on film. 
+These effects are crafted using advanced computer graphics and cutting-edge technology, 
+making them indispensable in today's entertainment industry.
+`
 
-const MyComponent = () => {
-  return (
-    <div>
-      <h1>Hello, World!</h1>
-    </div>
-  );
-};
-
-export default MyComponent;
+  },
+  VR: {
+    title: "VR Example",
+    description: ".",
+    code: `
+    Virtual Reality (VR) gaming represents one of the most exciting advancements in
+    the gaming industry,offering an immersive and interactive experience that
+    traditional gaming cannot match. 
+    Players can interact with a 3D environment as if they were physically present 
+    within the game,enhancing the sense of immersion and presence.
     `
   },
-  jsx: {
-    title: "JSX Example",
-    description: "An example demonstrating JSX syntax.",
+  ESports: {
+    title: "ESports Example",
+    description: ".",
     code: `
-import React from 'react';
-
-const JSXExample = () => {
-  return (
-    <div>
-      <h1>This is JSX</h1>
-    </div>
-  );
-};
-
-export default JSXExample;
+eSports involves organized, multiplayer video game competitions, typically
+between professional players or teams. These competitions are often held in arenas, 
+stadiums, or online platforms, and are broadcasted to a global audience. eSports 
+events range from small local tournaments to large-scale international championships
+with substantial prize pools.
     `
   },
-  props: {
-    title: "Props Example",
-    description: "An example demonstrating how to use props in a React component.",
+  Bowling: {
+    title: "Bowling Example",
+    description: ".",
     code: `
-import React from 'react';
-
-const Greeting = ({ name }) => {
-  return <h1>Hello, {name}!</h1>;
-};
-
-const App = () => {
-  return <Greeting name="John" />;
-};
-
-export default App;
-    `
-  },
-  state: {
-    title: "State Example",
-    description: "An example demonstrating how to use state in a React component.",
-    code: `
-import React, { useState } from 'react';
-
-const Counter = () => {
-  const [count, setCount] = useState(0);
-
-  return (
-    <div>
-      <p>Count: {count}</p>
-      <button onClick={() => setCount(count + 1)}>Increment</button>
-    </div>
-  );
-};
-
-export default Counter;
+Bowling video games have evolved significantly since their early days, becoming 
+more realistic and immersive with advancements in technology. What started as 
+simple 2D representations of bowling has transformed into detailed 3D simulations
+that mimic the physics and strategies of real-life bowling.
     `
   }
 };

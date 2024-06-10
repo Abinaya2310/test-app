@@ -33,7 +33,7 @@ return (
 }
 
 function App() {
-const [selectedTopic, setSelectedTopic] = useState<keyof ExamplesType>('components');
+const [selectedTopic, setSelectedTopic] = useState<keyof ExamplesType>('VFX');
 
 function handleSelect(selectedButton: keyof ExamplesType) {
 if (EXAMPLES[selectedButton]) {
@@ -54,38 +54,38 @@ return (
 <section id="core-concepts">
 <h2>Core Concepts</h2>
 <ul>
-<CoreConcept title="VFX" description="The core UI building block - compose the user interface by combining multiple components." />
-<CoreConcept title="VR" description="Make components configurable (and therefore reusable) by passing input data to them." />
-<CoreConcept title="ESports" description="Return (potentially dynamic) HTML(ish) code to define the actual markup that will be rendered." />
-<CoreConcept title="Bowling" description="React-managed data which, when changed, causes the component to re-render & the UI to update." />
+<CoreConcept title="VFX" description="The power of VFX in gaming lies in its ability to make the impossible seem real. It's about creating a believable experience that blurs the line between reality and fantasy." />
+<CoreConcept title="VR" description="Virtual reality is about giving people the experience of being in a different place and time. It's about making the impossible, possible." />
+<CoreConcept title="ESports" description="eSports is a rapidly growing phenomenon that has transformed video gaming into a competitive spectator sport. eSports isn’t the next big thing. It’s the current big thing." />
+<CoreConcept title="Bowling" description= "From realistic physics to stunning graphics, bowling games today offer an immersive experience that feels just like being at the lanes.It's all about mastering the angles and perfecting the spin!" />
 </ul>
 </section>
 <section id="examples">
 <h2>Examples</h2>
 <menu>
  <TabButton
- isSelected={selectedTopic === 'components'}
- onSelect={() => handleSelect('components')}
+ isSelected={selectedTopic === 'VFX'}
+ onSelect={() => handleSelect('VFX')}
  >
-     Components
+   VFX
  </TabButton>
 <TabButton
- isSelected={selectedTopic === 'jsx'}
- onSelect={() => handleSelect('jsx')}
+ isSelected={selectedTopic === 'VR'}
+ onSelect={() => handleSelect('VR')}
 >
-JSX
+VR
  </TabButton>
  <TabButton
- isSelected={selectedTopic === 'props'}
- onSelect={() => handleSelect('props')}
+ isSelected={selectedTopic === 'ESports'}
+ onSelect={() => handleSelect('ESports')}
  >
- Props
+ESports
  </TabButton>
  <TabButton
- isSelected={selectedTopic === 'state'}
- onSelect={() => handleSelect('state')}
+ isSelected={selectedTopic === 'Bowling'}
+ onSelect={() => handleSelect('Bowling')}
  >
- State
+Bowling
   </TabButton>
 </menu>
 
