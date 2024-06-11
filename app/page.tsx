@@ -8,12 +8,12 @@ import TabButton from "./TabButton";
 
 
 function Header() {
-const description = ['Gaming '];
+const description = ['WELCOME '];
 
 return (
 <header>
 <h1> PLAYTONIA GAMING</h1>
-<p>{description} is the ultimate stress reliever. "WELCOME TO PLAYTONIA GAMING"</p>
+<p>{description}   TO PLAYTONIA GAMING</p>
 </header>
 );
 }
@@ -55,9 +55,9 @@ return (
 <h2>Core Concepts</h2>
 <ul>
 <CoreConcept title="VFX" description="The power of VFX in gaming lies in its ability to make the impossible seem real. It's about creating a believable experience that blurs the line between reality and fantasy." />
-<CoreConcept title="VR" description="Virtual reality is about giving people the experience of being in a different place and time. It's about making the impossible, possible." />
-<CoreConcept title="ESports" description="eSports is a rapidly growing phenomenon that has transformed video gaming into a competitive spectator sport. eSports isn’t the next big thing. It’s the current big thing." />
-<CoreConcept title="Bowling" description= "From realistic physics to stunning graphics, bowling games today offer an immersive experience that feels just like being at the lanes.It's all about mastering the angles and perfecting the spin!" />
+<CoreConcept title="VR" description="Virtual reality is about giving people the experience of being in a different place and time. " />
+<CoreConcept title="ESports" description="eSports is a rapidly growing phenomenon that has transformed video gaming into a competitive spectator sport ." />
+<CoreConcept title="Bowling" description= "From realistic physics to stunning graphics, bowling games today offer an immersive experience that feels just like being at the lanes." />
 </ul>
 </section>
 <section id="examples">
